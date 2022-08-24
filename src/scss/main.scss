@@ -7,15 +7,16 @@
 // подключения компонентов страницы
 @import "./components/sidebar";
 @import "./components/cards";
+@import "./components/button";
 
 body {
   background-color: #f4f4f4;
 }
 
 .container {
-  
   max-width: 1170px;
   margin: 0 auto;
+  padding-top: 60px;
 
 }
 .main {

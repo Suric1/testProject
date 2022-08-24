@@ -140,9 +140,126 @@ a {
   width: 270px;
 }
 
-.card__content {
-  padding: 15px 15px 20px;
+.cards-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
+.cards-holder > .card-link {
+  margin-bottom: 30px;
+}
+
+.card-link {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.card-link:hover {
+  opacity: 0.8;
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.card {
+  position: relative;
+  width: 270px;
+  background-color: #fff;
+}
+.card__badges {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card__badges > * + * {
+  margin-left: 10px;
+}
+.card__badge {
+  display: inline-block;
+  height: 22px;
+  padding: 0 10px;
+  background-color: #525252;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #000000;
+}
+.card__badge--class {
+  background-color: #ffcf26;
+}
+.card__badge--credit {
+  background-color: #8a7a42;
+}
+.card__content {
+  padding: 16px 15px 20px;
+}
+.card__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #000000;
+}
+.card__term {
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #000000;
+}
+.card__metro {
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #000000;
+}
+.card__metro::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 16px;
+  height: 11px;
+  background: url("./../../img/icons/metro.svg") no-repeat;
+  background-size: initial;
+}
+.card__addres {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #777777;
+}
+
+.btn-more {
+  width: 100%;
+  height: 80px;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  color: #4290c9;
+  cursor: pointer;
+  -webkit-transform: background-color 0.2s ease-in;
+  -ms-transform: background-color 0.2s ease-in;
+  transform: background-color 0.2s ease-in;
+}
+.btn-more:hover {
+  background-color: #cccccc;
+}
+.btn-more img {
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
 body {
   background-color: #f4f4f4;
 }
@@ -150,6 +267,7 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .main {
