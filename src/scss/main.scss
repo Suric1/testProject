@@ -5,6 +5,24 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
+@import "./components/sidebar";
+@import "./components/cards";
 
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  
+  max-width: 1170px;
+  margin: 0 auto;
+
+}
+.main {
+  width: 870px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
 

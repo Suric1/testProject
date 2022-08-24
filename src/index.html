@@ -4,15 +4,17 @@
 @include('partials/head.html')
 
 <body class="page__body">
-  <div class="site-container">
-    @include('partials/header.html')
-    <main class="main">
-      
-    </main>
 
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример include -->
-  </div>
+
+    <div class="container">
+      <div class="row">
+        @include('partials/main.html')
+        @include('partials/aside.html')
+      </div>
+    </div>
+
+   
+
 </body>
 
 </html>
