@@ -1,3 +1,32 @@
 .sidebar {
   width: 270px;
 }
+
+.widget {
+
+  &__title {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 700px;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #000000;
+
+    &::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-image: url(./../../img/icons/chevron-up.svg);
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: center;
+    }
+  }
+
+  &__body {
+  }
+}

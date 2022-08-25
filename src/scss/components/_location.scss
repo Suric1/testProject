@@ -1,0 +1,46 @@
+.location {
+  &__row {
+    display: flex;
+    &:first-child {
+      overflow: hidden;
+      border-radius: 4px 4px 0 0;
+      border: 1px solid #d6d6d6;
+    }
+    &:last-child {
+      overflow: hidden;
+      border-radius: 0 0 4px 4px;
+      border: 1px solid #d6d6d6;
+      border-top: none;
+    }
+  }
+
+  &__btn {
+    flex-grow: 1;
+    height: 50px;
+    padding: 0 15px;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+    color: #3c3c3c;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+  }
+  &__checkbox {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+  }
+  &__checkbox:checked + &__btn {
+    background-color: #ffcf26;
+  }
+  &__checkbox:checked + &__btn:hover {
+    background-color: #e0b000;
+  }
+}
