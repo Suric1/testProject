@@ -9,19 +9,26 @@
 @import "./components/cards";
 @import "./components/button";
 @import "./components/location";
+@import "./components/radio";
+@import "./components/checkbox";
+
+
 
 body {
   background-color: #f4f4f4;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1240px;
   margin: 0 auto;
   padding-top: 60px;
 
 }
 .main {
   width: 870px;
+}
+.sidebar {
+  width: 270px;
 }
 .row {
   display: flex;
