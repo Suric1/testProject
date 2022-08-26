@@ -12,6 +12,7 @@
 @import "./components/radio";
 @import "./components/checkbox";
 @import "./components/toggle";
+@import "./components/media";
 
 
 
@@ -20,16 +21,22 @@ body {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 15px;
+
 
 }
 .main {
   width: 870px;
 }
 .sidebar {
+  min-width: 200px;
   width: 270px;
+}
+
+.main + .sidebar {
+  margin-left: 30px;
 }
 .row {
   display: flex;
