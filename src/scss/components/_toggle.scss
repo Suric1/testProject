@@ -1,0 +1,52 @@
+.toggle {
+  cursor: pointer;
+
+  &__real {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+  }
+
+  &__fake {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    width: 37px;
+    height: 20px;
+    background: #c4c4c4;
+    border-radius: 10px;
+    vertical-align: bottom;
+  }
+  &__fake::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: #3c3c3c;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+
+  &__real:checked + &__fake {
+    background: #ffe074;
+
+  }
+  &__real:checked + &__fake::before {
+    left: 19px;
+
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000000;
+  }
+  &__real:checked ~ &__title {
+    font-weight: 700;
+  }
+}
