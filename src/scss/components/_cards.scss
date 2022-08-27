@@ -7,7 +7,9 @@
   }
 
 }
-
+.card-link--hidden {
+  display: none !important;
+}
 
 .card-link {
   display: inline-block;

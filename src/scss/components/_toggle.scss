@@ -49,4 +49,15 @@
   &__real:checked ~ &__title {
     font-weight: 700;
   }
+
+}
+
+.toggle-sidebar {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 8px;
+  background-color: black;
+  border: none;
 }
